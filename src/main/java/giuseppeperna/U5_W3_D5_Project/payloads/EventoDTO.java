@@ -1,6 +1,5 @@
 package giuseppeperna.U5_W3_D5_Project.payloads;
 
-import jakarta.validation.constraints.Future;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Positive;
@@ -16,7 +15,7 @@ public record EventoDTO(
         String descrizione,
 
         @NotNull(message = "La data è obbligatoria")
-        @Future(message = "La data deve essere futura")
+        //@Future(message = "La data deve essere futura")
         LocalDate data,
 
         @NotNull(message = "L'ora è obbligatoria")
